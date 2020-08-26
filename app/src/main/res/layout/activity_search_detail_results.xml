@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.SearchDetailResults">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:id="@+id/map_container">
+
+                <com.google.android.gms.maps.MapView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/map"/>
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_full_screen_black_24dp"
+                    android:background="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/btn_full_screen_map"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiếp theo"
+                    android:textSize="20sp"
+                    android:id="@+id/btnNext"
+                    android:background="@drawable/btn_style"
+                    android:backgroundTint="#83eb34"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:id="@+id/customer_ride_layout"
+                android:background="@drawable/white_border_bottom">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/madeleina"
+                    android:id="@+id/journeyInformation"
+                    android:text="Thông tin về lịch trình"
+                    android:layout_centerHorizontal="true" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/journeyInformation">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pickupLayout"
+                            android:background="@drawable/white_border_bottom">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_walk_24"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/icon_walk"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                android:id="@+id/pickUpTextView"
+                                android:layout_toLeftOf="@+id/btn_pickup"
+                                android:layout_toRightOf="@+id/icon_walk"
+                                android:text="Đi đến 256 Ni Sư Huỳnh Liên  hdjkd djhas hdakd dhsakjhdkajshdjaskdhkaj
+                                daskjdhaksjdhak
+                                dkajhsdkjahsdkaj
+                                dlkaskdjhaksjdhasjdhkad dasdhjasj dhasdhakjsh dkajshdkahk"
+                                android:layout_toStartOf="@+id/btn_pickup"
+                                android:layout_toEndOf="@+id/icon_walk" />
+
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/btn_pickup"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="bottom|center_horizontal"
+                                android:src="@drawable/ic_pick_up"
+                                android:layout_alignParentRight="true"
+                                android:elevation="16dp"
+                                android:backgroundTint="@color/black"
+                                android:tint="@color/white" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rideLayout"
+                            android:background="@drawable/white_border_bottom"
+                            android:layout_marginTop="5dp">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_car_2"
+                                android:id="@+id/ic_car_2"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                android:id="@+id/journeyTextView"
+                                android:layout_toRightOf="@+id/ic_car_2"
+                                android:text="Đi đến Trường đại học Khoa Học Tự Nhiên djska dkajsld dkajsdlk daksdjla kdaksjhda
+dkashdkjahskda dkashd kjashdk kasdj haskdjh aksdha
+dkjsahdkjah sdkahsk dhajk"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dropLayout"
+                            android:background="@drawable/white_border_bottom"
+                            android:layout_marginTop="5dp">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_walk_24"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/icon_walk2"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                android:id="@+id/dropTextView"
+                                android:layout_toLeftOf="@+id/btn_drop"
+                                android:layout_toRightOf="@+id/icon_walk2"
+                                android:text="Đi đến 256 Ni Sư Huỳnh Liên  hdjkd djhas hdakd"
+                                android:layout_toStartOf="@+id/btn_drop"
+                                android:layout_toEndOf="@+id/icon_walk2" />
+
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/btn_drop"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="bottom|center_horizontal"
+                                android:src="@drawable/ic_drop_off"
+                                android:layout_alignParentRight="true"
+                                android:elevation="16dp"
+                                android:backgroundTint="@color/black"
+                                android:tint="@color/white" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

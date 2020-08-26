@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Payment.PaymentActivity"
+    tools:showIn="@layout/activity_payment">
+
+    <LinearLayout
+        android:id="@+id/waiting_group"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payment_group"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_payment"
+            android:background="@drawable/ic_payment"
+            android:layout_gravity="center_horizontal|top" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Tổng giá tiền"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="18sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/note1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Số tiền phải trả :"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalPriceTexView"
+                android:layout_toRightOf="@+id/note1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="100.000"
+                android:textSize="20sp"
+                android:textColor="@color/green"/>
+            <TextView
+                android:id="@+id/note2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/note1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Số tiền được giảm :"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/discountTextView"
+                android:layout_alignRight="@+id/totalPriceTexView"
+                android:layout_alignBaseline="@+id/note2"
+                android:layout_marginTop="20dp"
+                android:text="-10.000"
+                android:textSize="20sp"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/moneyTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/lightgrey"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text=""
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/paymentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_style"
+            android:backgroundTint="#FE9923"
+            android:text="Xác nhận"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Hủy bỏ"
+            android:textColor="@color/darkgrey"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

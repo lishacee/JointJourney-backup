@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="80dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/requestProfilePhoto"
+                android:padding="2dp"
+                app:civ_border_color="@color/lightgrey"
+                app:civ_border_width="2dp"
+                android:src="@drawable/dr_expresso" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/requestProfilePhoto"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="32dp"
+                android:textSize="16sp"
+                android:layout_marginRight="32dp"
+                android:id="@+id/message"
+                android:gravity="center"
+                android:text="Xin chào, tôi là {Username} và tôi muốn tham gia chuyến đi của bạn!" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/message"
+                    android:orientation="vertical"
+                    android:weightSum="100"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="70">
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/scrollView"
+                            android:layout_gravity="center_horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center_horizontal">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginTop="25dp"
+                                    app:cardCornerRadius="20dp"
+                                    app:cardBackgroundColor="@color/lightgrey"
+                                    android:layout_marginRight="32dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:textSize="16sp"
+                                        android:id="@+id/from"
+                                        android:gravity="center"
+                                        android:text="Từ: Hà nội" />
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="32dp"
+                                    app:cardCornerRadius="20dp"
+                                    app:cardBackgroundColor="@color/lightgrey"
+                                    android:layout_marginRight="32dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:textSize="16sp"
+                                        android:id="@+id/to"
+                                        android:gravity="center"
+                                        android:text="Đến: TpHCM" />
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="32dp"
+                                    app:cardCornerRadius="20dp"
+                                    app:cardBackgroundColor="@color/lightgrey"
+                                    android:layout_marginRight="32dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:textSize="16sp"
+                                        android:id="@+id/pickup"
+                                        android:gravity="center"
+                                        android:text="Địa điểm đón: Hải phòng" />
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="32dp"
+                                    app:cardCornerRadius="20dp"
+                                    app:cardBackgroundColor="@color/lightgrey"
+                                    android:layout_marginRight="32dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:textSize="16sp"
+                                        android:id="@+id/drop"
+                                        android:gravity="center"
+                                        android:text="Địa điểm xuống : Cần Thơ" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                        </ScrollView>
+                    </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="30"
+                            android:layout_marginBottom="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="bottom">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/confirmRideBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="16dp"
+                                android:src="@drawable/ic_check"
+                                app:backgroundTint="@color/theme" />
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/declineRideBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="100dp"
+                                android:elevation="16dp"
+                                android:src="@drawable/ic_close"
+                                app:backgroundTint="@android:color/holo_red_dark" />
+
+                        </RelativeLayout>
+
+                </LinearLayout>
+    </RelativeLayout>
+
+
+</merge>

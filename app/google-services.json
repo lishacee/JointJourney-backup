@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "572165923760",
+    "firebase_url": "https://jointjourney-4f886.firebaseio.com",
+    "project_id": "jointjourney-4f886",
+    "storage_bucket": "jointjourney-4f886.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572165923760:android:8718c1e23dda0c43d3ec75",
+        "android_client_info": {
+          "package_name": "com.thang.jointjourney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572165923760-0nqfjuts6e1uhklo6bjl116ds3qbgptl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thang.jointjourney",
+            "certificate_hash": "4ee0f46b9acdbcd7e7f925c26adb52646b0c644f"
+          }
+        },
+        {
+          "client_id": "572165923760-iu6uce7lq4egpjr9ici6e38m6f7b2472.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKpzKJUhdC2LtxhyFRjgTCIo61fH-GHn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572165923760-iu6uce7lq4egpjr9ici6e38m6f7b2472.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
