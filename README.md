@@ -1,6 +1,6 @@
 ## JOINT JOURNEY
 Xin chào, Joint Journey là một ứng dụng đi chung xe được viết bằng Java trên nền tảng Android. Đây là ứng dụng mình xây dựng cho đề tài tốt nghiệp. Các thông tin về người dùng và chuyến đi sẽ được lưu trữ trên Firebase. Ngoài ra kết hợp với Google API để nhúng bản đồ vào trong ứng dụng.    
-![1](Image/jointjourney.png)
+![1](https://github.com/lishacee/JointJourney-backup/blob/master/docs/Image/jointjourney.png)
 ## Hướng dẫn:
 1.	Clone source code về :  
 Git clone https://github.com/lishacee/JointJourney-backup.git
