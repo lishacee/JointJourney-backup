@@ -24,11 +24,11 @@ Git clone https://github.com/lishacee/JointJourney-backup.git
 
 Để hoàn thành Joint Journey, mình đã tham khảo khá nhiều nguồn bao gồm các nguồn chính sau đây:      
 
-    https://bitly.com.vn/0MEmJ
+    https://www.youtube.com/watch?v=7HbQx0lwRww&list=PLxabZQCAe5fgXx8cn2iKOtt0VFJrf5bOd
     https://github.com/DrExpresso/Gopool
-    https://bitly.com.vn/1ZLzW
-    https://bitly.com.vn/9duYA
-    https://bitly.com.vn/rvzjZ
+    https://www.youtube.com/watch?v=144TuYxEu2M&list=PLaoF-xhnnrRUgYvE7OhXVgxIpjwg4LvMM
+    https://www.youtube.com/watch?v=jg1urt3FGCY
+    https://www.youtube.com/watch?v=McCbYGF-osE&list=PLgCYzUzKIBE-SZUrVOsbYMzH7tPigT3gi&index=2
 
 
 ## Lời cuối
